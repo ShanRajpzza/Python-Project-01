@@ -9,8 +9,6 @@ FAILURE_URL = "https://run.mocky.io/v3/b22584c7-d0e2-46f7-bc1a-140e73c8645b"
 response = requests.get(SUCCESS_URL)
 response1 = requests.get(FAILURE_URL)
 
-
-
 with open('0to1000.txt', 'r') as file:
     for line in file:
         new=int(line.strip())
@@ -21,10 +19,3 @@ with open('0to1000.txt', 'r') as file:
     else:
         print(response1.json())
         print("Your password isn't in this list")
-        print("")
-        #comment somethin here
-    
-
-
-
-
