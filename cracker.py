@@ -21,6 +21,7 @@ with open('0to1000.txt', 'r') as file:
     else:
         print(response1.json())
         print("Your password isn't in this list")
+        print("")
     
 
 
